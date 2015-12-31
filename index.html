@@ -1,29 +1,29 @@
 <body style="display: flex; justify-content: center; align-items: center">
 <div width="50%">
   <h1>Skelet Code<sup><small>PoC</small></sup></h1>
-  <p><a href="">Demo</a>
+  <p><a href="/video/demo.mp4">Demo</a>
   <ol>
     <li>Provokes to build the editor as a part of your own project.
     <li>Written in ObjC and Javascript (React Native), no html and css engines inside.
-    <li>1MB binary, 200MB RAM.
+    <li>1MB binary, <a href="/screens/perfomance.png">200MB RAM</a>
     <li><a href="https://github.com/skeletcode">Github link</a> (not ready)
     <li>OSX only, no ecosystem. You can help with that (ping me) or support on Patreon.
   </ol>
 
   <h3>1. The editor is also a part of your project</h3>
   <ul>
-    <li>a) You start with a preset and global scoped plugins and then customize the editor by writing your own components.
+    <li>a) You start with a preset and global scoped plugins and then customize the editor by writing your own components. 
     <li>b) You can get a totally different expirience for each type of project, <br/> heavily integrated into your framework
       (e.g.: AngularIDE, EmberText). <a href="/video/react-analysis.mp4">React tree component analysis (video)</a>
     <li>c) Installing plugins as simple as <code>npm install skelet-plugin-react</code>.
-    <li>e) Gradual typing helper, advanced debugging.
-    <li>d) Add bootstraper to your Editor (webpack, hotreload).
+    <li>e) <i>Work in progress: Gradual typing helper, advanced debugging.</i>
+    <li>d) <i>Work in progress: Add bootstraper to your version of the editor (webpack, hotreload).</i>
   </ul>
 
   <h3>2. Arhitecture</h3>
   <ul>
-    <li>a) It's a React Native app.
-    <li>b) <i>UIThread - JSThreads</i> illustration.
+    <li>a) It's a React Native app, specifically <a href="https://github.com/ptmt/react-native-desktop">fork for AppKit</a>.
+    <li>b) <i>UIThread - JSThreads</i> explanation goes here.
     <li>c) <a href="">Chrome DevTools screenshot</a>.
     <li>d) Hot reloadable.
     <li>e) ES7, JSX.
@@ -33,12 +33,12 @@
 
   <ul>
     <li>Native Cocoa TextKit under the hood.</li>
-    <li>Typing latency ~x ms.
+    <li>Typing latency ~x ms (TODO: measure).
     <li>Allows you to open <a href="/video/open_large_file.mp4">1GB file</a>
   </ul>
 
   <footer>
-    <center><small>Skelet &copy; No fancy landing page for now. </small></center>
+    <center><small>Skelet &copy; </small></center>
   </footer>
 </div>
 </body>
