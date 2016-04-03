@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 /*
  * TODO:
- * validate arguments
- * show help
- * run different modes
+ * - validate arguments
+ * - show help
+ * - run in different modes
  **/
 const skeletArgs = process.argv.slice(2)
 
