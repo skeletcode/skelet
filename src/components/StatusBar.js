@@ -1,0 +1,27 @@
+import React from 'react-native-desktop'
+
+const { View, StyleSheet, Text } = React
+
+module.exports = React.createClass({
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.statusBarText}>Last action: {this.props.log[this.props.log.length - 1]}</Text>
+      </View>
+    );
+  }
+});
+
+const styles = StyleSheet.create({
+  container: {
+    height: 24,
+    justifyContent: 'center',
+    marginLeft: 15
+    //alignItems: 'flex-end'
+  },
+  statusBarText: {
+    fontFamily: 'FiraCode-Retina',
+    color: '#888',
+    fontSize: 10
+  }
+})

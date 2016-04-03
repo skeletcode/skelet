@@ -1,0 +1,36 @@
+{
+  "name": "skelet",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "react-native-desktop start",
+    "build": "node ./cli/build.js"
+  },
+  "dependencies": {
+    "babel-core": "^6.7.4",
+    "babel-plugin-syntax-async-functions": "^6.5.0"
+  },
+  "description": "Experimental code editor",
+  "bin": {
+    "skelet": "./cli/skelet.js"
+  },
+  "main": "index.osx.js",
+  "devDependencies": {
+    "babel-core": "^6.7.4",
+    "babel-plugin-syntax-async-functions": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "babel-standalone": "^6.6.5",
+    "babylon": "*",
+    "react": "^0.14.6",
+    "react-native-desktop": "ptmt/react-native-desktop",
+    "react-native-vector-icons": "skeletcode/react-native-vector-icons",
+    "react-redux": "^4.4.1",
+    "redux": "^3.3.1",
+    "redux-logger": "^2.6.1",
+    "redux-storage": "^4.0.0",
+    "redux-storage-decorator-debounce": "^1.0.0",
+    "redux-thunk": "^2.0.1"
+  },
+  "author": "Dmitriy Loktev",
+  "license": "ISC"
+}
