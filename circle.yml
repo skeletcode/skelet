@@ -1,0 +1,28 @@
+general:
+  branches:
+    ignore:
+      - gh-pages # list of branches to ignore
+
+machine:
+  node:
+    version: 5.6.0
+
+dependencies:
+  override:
+    - npm config set spin=false
+    - npm config set progress=false
+    - npm install
+    # for eslint bot
+    - npm install github@0.2.4
+
+  cache_directories:
+    - "node_modules"
+
+test:
+  pre:
+
+
+  override:
+    # JS tests for dependencies installed with npm3
+    - npm run flow check
+    #- npm test -- --maxWorkers=1

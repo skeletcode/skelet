@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "scripts": {
     "start": "react-native-desktop start",
-    "build": "node ./cli/build.js"
+    "build": "node ./cli/build.js",
+    "flow": "flow"
   },
   "dependencies": {
     "babel-core": "^6.7.4",
@@ -21,6 +22,7 @@
     "babel-preset-react": "*",
     "babel-standalone": "^6.6.5",
     "babylon": "*",
+    "flow-bin": "^0.22.1",
     "react": "^0.14.6",
     "react-native-desktop": "ptmt/react-native-desktop",
     "react-native-vector-icons": "skeletcode/react-native-vector-icons",
