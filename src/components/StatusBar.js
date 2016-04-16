@@ -1,6 +1,7 @@
-import React from 'react-native-desktop'
+import React from 'react';
+import ReactNative from 'react-native-desktop'
 
-const { View, StyleSheet, Text } = React
+const { View, StyleSheet, Text } = ReactNative
 
 module.exports = React.createClass({
   render() {

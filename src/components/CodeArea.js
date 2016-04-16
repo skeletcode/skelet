@@ -4,7 +4,8 @@
  */
 'use strict';
 
-const React = require('react-native-desktop');
+import React from 'react';
+const ReactNative = require('react-native-desktop');
 
 const {
   PropTypes,
@@ -13,7 +14,7 @@ const {
   Text,
   requireNativeComponent,
   TouchableWithoutFeedback,
-} = React;
+} = ReactNative;
 
 const SkeletTextView = requireNativeComponent('SKTextView', null);
 

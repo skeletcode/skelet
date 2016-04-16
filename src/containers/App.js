@@ -1,6 +1,7 @@
 /* @flow */
 
-import React from 'react-native-desktop'
+import React from 'react'
+import ReactNative from 'react-native-desktop'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import * as Actions from '../actions';
@@ -19,7 +20,7 @@ const {
   View,
   Linking,
   TouchableOpacity
-} = React
+} = ReactNative
 
 /*
  * TODO: pass it from process, something like:

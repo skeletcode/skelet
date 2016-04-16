@@ -1,6 +1,7 @@
 /* @flow */
-import React from 'react-native-desktop';
-const { View, Dimensions, AppRegistry } = React;
+import React from 'react';
+import ReactNative from 'react-native-desktop';
+const { View, Dimensions, AppRegistry } = ReactNative;
 
 import { createStore, applyMiddleware} from 'redux';
 import { Provider } from 'react-redux';
