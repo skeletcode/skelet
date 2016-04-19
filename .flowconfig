@@ -20,6 +20,7 @@
 .*/node_modules/fbjs/lib/ExecutionEnvironment.js
 .*/node_modules/fbjs/lib/ErrorUtils.js
 .*/node_modules/fbjs/lib/fetchWithRetries.js
+.*/node_modules/json5/test/parse-cases/objects/duplicate-keys.json
 
 # Flow has a built-in definition for the 'react' module which we prefer to use
 # over the currently-untyped source
@@ -59,4 +60,4 @@ suppress_comment=\\(.\\|\n\\)*\\$FlowIssue\\((\\(>=0\\.\\(2[0-2]\\|1[0-9]\\|[0-9
 suppress_comment=\\(.\\|\n\\)*\\$FlowFixedInNextDeploy
 
 [version]
-0.22.1
+0.23.0

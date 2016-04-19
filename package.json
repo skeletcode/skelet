@@ -24,7 +24,7 @@
     "babylon": "*",
     "flow-bin": "^0.22.1",
     "react": "^0.14.6",
-    "react-native-desktop": "0.6.0-rc1",
+    "react-native-desktop": "0.6.0-rc2",
     "react-native-vector-icons": "skeletcode/react-native-vector-icons",
     "react-redux": "^4.4.1",
     "redux": "^3.3.1",
