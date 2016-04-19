@@ -1,6 +1,6 @@
 {
   "name": "skelet",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "scripts": {
     "start": "react-native-desktop start",
     "build": "node ./cli/build.js",
@@ -22,9 +22,9 @@
     "babel-preset-react": "*",
     "babel-standalone": "^6.6.5",
     "babylon": "*",
-    "flow-bin": "^0.22.1",
+    "flow-bin": "^0.23.0",
     "react": "^0.14.6",
-    "react-native-desktop": "0.6.0-rc2",
+    "react-native-desktop": "0.6.0-rc3",
     "react-native-vector-icons": "skeletcode/react-native-vector-icons",
     "react-redux": "^4.4.1",
     "redux": "^3.3.1",
