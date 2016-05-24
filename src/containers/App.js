@@ -96,5 +96,10 @@ const styles = StyleSheet.create({
   rightArea: {
     flex: 1,
   },
-  codeArea: {backgroundColor: '#fff', fontSize: 12, color: '#352F2F', fontFamily: 'FiraCode-Retina'},
+  codeArea: {
+    backgroundColor: '#fff',
+    fontSize: 12,
+    color: '#352F2F',
+    fontFamily: 'FiraCode-Retina'
+  },
 });
