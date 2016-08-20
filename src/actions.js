@@ -67,12 +67,11 @@ export function selectTab(path: string): Action {
 export function highlightSyntax(path:string, code: string): Action {
   try {
     const highlights = ReactPlugin(code);
-    return {type: types.REACT_PLUGIN_CONTENT, path, highlights};
+    return { type: types.REACT_PLUGIN_CONTENT, path, highlights };
   }
   // because we can't get an AST each time
   catch (ex) {
-    console.log(ex)
-    return {type: '__ignore'};
+    return { type: '__ignore' };
   }
 }
 

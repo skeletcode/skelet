@@ -1,4 +1,4 @@
-import React from 'react-native-desktop'
+import React from 'react-native-macos'
 
 const { MenuManager, NativeModules } = React;
 

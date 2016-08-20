@@ -1,20 +1,21 @@
 {
   "name": "skelet",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "scripts": {
-    "start": "react-native-desktop start",
+    "start": "react-native-macos start",
     "build": "node ./cli/build.js",
     "flow": "flow"
   },
   "dependencies": {
     "babel-core": "^6.7.4",
-    "babel-plugin-syntax-async-functions": "^6.5.0"
+    "babel-plugin-syntax-async-functions": "^6.5.0",
+    "react": "^15.3.1"
   },
-  "description": "Experimental code editor",
+  "description": "Experimental code editor (currently MacOS only)",
   "bin": {
     "skelet": "./cli/skelet.js"
   },
-  "main": "index.osx.js",
+  "main": "index.macos.js",
   "devDependencies": {
     "babel-core": "^6.7.4",
     "babel-plugin-syntax-async-functions": "*",
@@ -23,8 +24,8 @@
     "babel-standalone": "^6.6.5",
     "babylon": "*",
     "flow-bin": "^0.23.0",
-    "react": "^0.14.6",
-    "react-native-desktop": "0.6.0-rc3",
+    "react": "^15.3.1",
+    "react-native-macos": "0.10.0-rc1",
     "react-native-vector-icons": "skeletcode/react-native-vector-icons",
     "react-redux": "^4.4.1",
     "redux": "^3.3.1",

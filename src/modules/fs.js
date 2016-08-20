@@ -1,5 +1,5 @@
 const RCTDeviceEventEmitter = require('RCTDeviceEventEmitter');
-import React from 'react-native-desktop'
+import React from 'react-native-macos'
 const { NativeModules } = React
 const { FilesystemManager } = NativeModules
 

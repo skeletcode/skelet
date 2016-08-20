@@ -1,7 +1,7 @@
 /* @flow */
 
 import React from 'react'
-import ReactNative from 'react-native-desktop'
+import ReactNative from 'react-native-macos'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import * as Actions from '../actions';
@@ -32,33 +32,37 @@ const App = React.createClass({
 
   componentWillMount() {
     /*
-     * setupMenubar
+     * setup menubar
      */
     setupMenubar(this.props);
     /*
      * Load directory from the command line
      **/
-    if (process.argv && process.argv[0] && process.argv[0][0] !== '-') {
-      this.props.loadDirectory(process.argv[0])
-    }
+    // console.log(process.argv)
+    // if (process.argv && process.argv[0] && process.argv[0][0] !== '-') {
+    //   this.props.loadDirectory(process.argv[0])
+    // }
   },
 
   render() {
+
+    const { props } = this;
+
     return (
       <View style={styles.container}>
         {this.props.workingTree && Object.keys(this.props.workingTree).length > 0 &&
           <View style={styles.leftPanel}>
-            <TreeView {...this.props} />
+            <TreeView {...props} />
           </View>
         }
         <View style={styles.innerContainer}>
-          <Tabs {...this.props} />
+          <Tabs {...props} />
           {
             this.props.tabs.map((tab, i) => {
             return <CodeArea
               key={i}
               onChange={(e) => this.props.codeChanged(this.props.tabs.filter(c => c.isSelected)[0].path, e.nativeEvent.text)}
-              style={[styles.codeArea, tab.isSelected ? {} : {position: 'absolute'}]}
+              style={[styles.codeArea, tab.isSelected ? {} : { position: 'absolute' }]}
               text={tab.content}
               highlights={tab.highlights}
             />

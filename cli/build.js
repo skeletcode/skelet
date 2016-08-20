@@ -2,8 +2,8 @@ const execSync = require('child_process').execSync
 const path = require('path')
 const fs = require('fs')
 
-const PROJECT_PATH = 'osx/skelet.xcodeproj'
-const PLIST_PATH = 'osx/skelet/Info.plist'
+const PROJECT_PATH = 'macos/skelet.xcodeproj'
+const PLIST_PATH = 'macos/skelet/Info.plist'
 const BUILD_DIR_NAME = 'build'
 
 const buildDir = path.join(process.cwd(), BUILD_DIR_NAME)

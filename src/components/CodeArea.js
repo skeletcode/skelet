@@ -5,7 +5,7 @@
 'use strict';
 
 import React from 'react';
-const ReactNative = require('react-native-desktop');
+const ReactNative = require('react-native-macos');
 
 const {
   PropTypes,

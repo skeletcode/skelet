@@ -11,7 +11,7 @@ import ReactNative,  {
   TouchableWithoutFeedback,
   Animated,
   LayoutAnimation
-} from 'react-native-desktop';
+} from 'react-native-macos';
 
 type TabState = {
   hovered: boolean

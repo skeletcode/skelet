@@ -4,7 +4,7 @@ import * as t from "babel-types";
 //const babel = require('babel-standalone')
 // const presetReact = require('babel-preset-react')
 // const preset2015 = require('babel-preset-es2015')
-import React from 'react-native-desktop'
+import React from 'react-native-macos'
 
 const components = [];
 const highlights = [];

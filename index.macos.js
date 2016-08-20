@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import ReactNative from 'react-native-desktop';
+import ReactNative from 'react-native-macos';
 const { View, Dimensions, AppRegistry } = ReactNative;
 
 import { createStore, applyMiddleware} from 'redux';

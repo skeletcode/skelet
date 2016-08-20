@@ -12,7 +12,7 @@ import ReactNative,  {
   Animated,
   ScrollView,
   LayoutAnimation
-} from 'react-native-desktop';
+} from 'react-native-macos';
 
 import Icon from 'react-native-vector-icons/Octicons'
 import Ionicon from 'react-native-vector-icons/Ionicons'
